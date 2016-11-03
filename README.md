@@ -1,2 +1,5 @@
 # exponent-push-expressjs
-Simple server to broadcast all devices with Push Notification (using Exponent Backend). 
+
+Simple server to broadcast all devices with push notification with use of ExpressJS and Exponent Backend.
+
+
