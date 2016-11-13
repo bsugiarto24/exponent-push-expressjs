@@ -158,13 +158,16 @@ var tokenList = [];
 
 app.post("/token", function (req, res){
     
-      /* is a valid token? */
+    /* is a valid token? */
       var val = isExponentPushToken(req.body.token.value);
       
       if (val){
-           if ( tokenList.indexOf(val) < 0 ){
-                        tokenList.push(req.body.token.value);
+           if ( tokenList.indexOf(req.body.token.value) < 0){
+                  tokenList.push(req.body.token.value);
+                  console.log(tokenList.length + 'users connected');
            }
+
+	
       }
 
       res.end();
