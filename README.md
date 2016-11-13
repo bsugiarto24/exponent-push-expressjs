@@ -8,9 +8,13 @@ Implemented routes for listen and store tokens from devices and a route for send
 // initialize git for your project, add the changes and perform a commit
 
 git init
+
 git add .
+
 git commit -m "first commit"
+
 // create heroku app and push to heroku
 
 heroku create
+
 git push heroku master
