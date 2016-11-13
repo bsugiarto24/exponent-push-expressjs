@@ -163,7 +163,7 @@ app.post("/token", function (req, res){
       
       if (val){
            if ( tokenList.indexOf(val) < 0 ){
-                        val.push(req.body.token.value);
+                        tokenList.push(req.body.token.value);
            }
       }
 
